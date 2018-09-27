@@ -12,9 +12,17 @@ set(SDCARD_VERSION  ${VERSION_MAJOR}.${VERSION_MINOR}V${SDCARD_REVISION})
 cmake_minimum_required(VERSION 2.8)
 cmake_policy(SET CMP0020 NEW)
 cmake_policy(SET CMP0023 OLD)
+
+cmake_policy(SET CMP0012 NEW)
+
 if(POLICY CMP0042)
   cmake_policy(SET CMP0042 NEW)
 endif()
+
+if(POLICY CMP0012)
+  cmake_policy(SET CMP0012 NEW)
+endif()
+
 if(POLICY CMP0043)
   cmake_policy(SET CMP0043 NEW)
 endif()
